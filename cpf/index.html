@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
     <title>CPF</title>
     <script src="./script.js" defer></script>
 </head>
 <body>
+</html>
     <div class="container">
         <div class="header">
-            <h2>Validar CPF</h2>
+            <img src="./assets/cpf.png" alt="CPF">
         </div>
         <form id="form" class="form" onsubmit="return validateCPF(event)" method="post">
             <div class="form-control">
@@ -20,6 +22,10 @@
                 <p id="cpfValidationResult"></p>
             </div>
             <button type="submit" class="campo_entrada">Verificar</button>
+            </div>
+            <div class="campo_entrada">
+                <button type="submit" class="campo_entrada">Verificar</button>
+            </div>
         </form>
     </div>
 </body>
