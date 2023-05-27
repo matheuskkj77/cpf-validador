@@ -18,12 +18,11 @@
         <form id="form" class="form" onsubmit="return validateCPF(event)" method="post">
             <div class="form-control">
                 <label for="cpf">Coloque seu CPF:</label>
-                <input type="text" id="cpfInput" placeholder="000.000.000-00" maxlength="11">
+                <p><input id="cpf" type="text" onkeyup="cpfCheck(this)" maxlength="14" onkeydown="javascript: fMasc( this, mCPF );"> <span id="cpfResponse"></span></p>
                 <p id="cpfValidationResult"></p>
             </div>
             
-            <div class="campo_entrada">
-                <button type="submit" class="campo_entrada">Verificar</button>
+           
             </div>
         </form>
     </div>
